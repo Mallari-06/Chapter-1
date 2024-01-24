@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>Chapter-1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="padding: 15%">
+        <hr style="border: 2px solid blue;"><br><h1 style="color: #4285F4;">Chapter 1. New and Changed Functions in the NetView V6R3 Program</h1>
+        <p>Whether you have a small installation or you are managing a large, distributed enterprise, the NetView program provides efficient systems and network management capability on any platform. The new and changed functions in this release are described in the following topics:</p>
+        <p>•“Automation Enhancements” on page 1<br>
+•	“Command Facility Enhancements” on page 1<br>
+•	“Configuration Enhancements” on page 1<br>
+•	“Security Enhancements” on page 2<br>
+•	“Additional Enhancements” on page 2<br>
+•	“IP Management” on page 3<br>
+•	“Library Changes” on page 3<br></p>
+        <h2 style="color: #4285F4;">Automation Enhancements<br><hr style="border: 2px solid blue;"></h2>
+         <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 1. Automation Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>AUTOTEST Command Enhancement</p></td>
+    <td><p>The AUTOTEST command is enhanced with a new keyword, CZRECORD, to allow a message to be retrieved from Canzlog and recorded.</p></td>
+    <td><i>IBM Z NetView Command Reference Volume 1 (A-N)</i></td>
+  </tr>
+</table>
+        <h2 style="color: #4285F4;">Command Facility Enhancements<br><hr style="border: 2px solid blue;"></h2>
+              <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 2. Command Facility Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>Command Statistics (NCCF)</p></td>
+    <td><p>Command Statistics (NCCF)Controls the collection of statistics data for NetView Commands and supports storing that data as records of a new SMF sub-type (4) under record type 38.	IBM Z NetView Command Reference Volume 1 (A-N)</p></td>
+    <td><i>IBM Z NetView Command Reference Volume 1 (A-N)</i></td>
+  </tr>
+</table>
+        <h2 style="color: #4285F4;">Configuration Enhancements<br><hr style="border: 2px solid blue;"></h2>
+          <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 3. Configuration Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>Dynamic Canzlog Archive Data Spaces</p></td>
+    <td><p>The ARCHIVE.BROWSE.MAXDSPSIZE
+statement defines the maximum number of megabytes that the NetView program can allocate for browsing archived Canzlog data.
+</p></td>
+    <td><i>IBM Z NetView Administration Reference</i></td>
+  </tr>
+</table>
+        
+        <h2 style="color: #4285F4;">Security Enhancements  <hr style="border: 2px solid blue;"></h2>
+                     <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 4. Security Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>Multi-factor Authentication (MFA) Support</p></td>
+    <td><p>The NetView program currently has the capability to perform MFA authentication. This enhancement provides the capability to change MFA passwords and passphrases from the NetView program.</p></td>
+    <td><i>IBM Z NetView Security Reference</i></td>
+  </tr>
+</table>
+        <h2 style="color: #4285F4;">Additional Enhancements <hr style="border: 2px solid blue;"></h2>
+        <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 5. Additional Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>LISTA Command</p></td>
+    <td><p>LISTA Command	The output of the LISTA command will now indicate if the user issuing the command does not have access to a data set for the specified DD and still display the member name if it exists in data sets which the user can access.	IBM Z NetView Command Reference Volume 1 (A-N)</p></td>
+    <td><i>IBM Z NetView Command Reference Volume 1 (A-N)</i></td>
+  </tr>
+    <tr>
+    <td><p>NetView REST Server</p></td>
+    <td><p>The NetView REST Server enables the user to write a modern web application using NetView RESTful APIs either stand-alone or as a Zowe™ application.</p></td>
+    <td><i>IBM Z NetView Application Programmer's Guide
+IBM Z NetView Installation: Configuring Additional Components</i></td>
+  </tr>
+     <tr>
+    <td><p>Service Management Unite Automation Dashboards</p></td>
+    <td><p>NetView Service Management Unite dashboards are provided in the following areas:
+•	NetView domains using Enterprise or Sysplex Master capabilities<br>
+•	Canzlog messages<br>
+•	Creation of automation table statements and management of automation table members<br>
+•	Task statistics<br>
+•	Distributed Distributed dynamic virtual IP address (DVIPA) statistics<br>
+•	NetView commands<br></p></td>
+    <td><i>IBM Z NetView Application Programmer's Guide</i>IBM Service Management Unite Knowledge Center</td>
+  </tr>
+    <tr>
+    <td><p>Regular Expressions</p></td>
+    <td><p>Regular expression support has been added to the following areas of the NetView program:<br>
+•	The LOCATE and NLOCATE stages of the PIPE command<br>
+•	A new REXX function, MATCH<br>
+•	A new Automation Table Function, DSIAMMCH<br></p></td>
+    <td><i>IBM Z NetView Application Programmer's Guide</i></td>
+  </tr>
+    <tr>
+    <td><p>SEQUENTCommand to Serialize Tasks</p></td>
+    <td><p>Capability to synchronize processing between different NetView tasks that are similar to the z/OS ENQ and DEQ functions. The function is called SEQUENT.</p></td>
+    <td><i>IBM Z NetView Application Programmer's Guide IBM Z NetView Security Reference</i></td>
+  </tr>            
+</table>
+        <h2 style="color:#4285F4;">IP Management  <hr style="border: 2px solid blue;"></h2>
+    <table style="width:100%">
+  <tr>
+    <th colspan="3"><i>Table 6. IP Management Enhancements</i></th>
+   </tr>
+  <tr>
+    <td><b>Function</b></td>
+    <td><b>Description</b>	</td>
+    <td><b>Additional information</b></td>
+  </tr>
+  <tr>
+    <td><p>Packet Traces in Sniffer Format</p></td>
+    <td><p>Utilize an MVS JCL Procedure to copy the CTRACE file, which is generated from the IPTRACE function, as a Sniffer trace formatted file.</p></td>
+    <td><i>IBM Z NetView IP Management</i></td>
+  </tr>
+    <tr>
+    <td><p>zERT Support</p></td>
+    <td><p>The NetView program provides information about whether a connection is encrypted, and if so, information about the encryption methods, algorithms, and certificate information including cryptographic key length.</p></td>
+    <td><i>IBM Z NetView Installation: Configuring Additional Components</i></td>
+  </tr>
+</table>
+        <h2 style="color: #4285F4;">Library Changes  <hr style="border: 2px solid blue;">	</h2>
+          <table style="width:100%">
+  <tr>
+    <th colspan="2"><i>Table 7. Library Changes</i></th>
+   </tr>
+  <tr>
+    <td><b>Publication</b></td>
+    <td><b>Description</b>	</td>
+  </tr>
+  <tr>
+    <td><p>IBM Z NetView Installation: Migration Guide</p></td>
+    <td><p>Information on migrating from NetView V5R3 and NetView V5R4 has been removed from the library.</p></td>\
+  </tr>
+    <tr>
+    <td><p>General library changes</p></td>
+    <td><p>From NetView V6R3 program, the following product names are officially changed:<br>
+•	IBM Tivoli NetView for z/OS to IBM Z NetView<br>
+•	IBM System Automation for z/OS to IBM Z System Automation<br>
+•	IBM Tivoli NetView for GDPS to IBM Z NetView for Continuous Availability<br></p></td>
+  </tr>
+</table>
+        
+        
+    
+    </body>
+</html>
